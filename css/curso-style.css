@@ -27,24 +27,26 @@ body{
     color: #555555;
     font-weight: bold;
 }
-.container-titulo{
-    margin-bottom: 20px;
-}
-.container-texto{
+.container-cursos{
     background-color: var(--cor-laranja);
-    text-align: center;
-    margin: 10% 20% 10% 20%;
-    padding: 100px;
+    margin: 8% 3%;
+    padding:50px;
     border-radius: 20px;
     box-shadow: 0 5px 10px #cccc;
 }
-.container-texto li a{
-    text-decoration: none;
-    color: #000000;
+.container-titulo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
-.container-texto li a:hover{
-    text-decoration: underline;
-    color: #4c4a4a;
+.accordion{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.card-img-top{
+    display: block;
+    padding: 0.5rem;
 }
 .container-descricao{
     margin: 0 20px 0 20px;
@@ -57,9 +59,16 @@ body{
     max-width: 10%;
 }
 
-@media screen and (max-width: 480px){
-    .container-texto, .container-descricao, .container-titulo{
-        margin: 30px 20px;
-        padding: 10px 10px;
+@media screen and (max-width: 1200px){
+    .container-texto, .container-cursos, .container-titulo{
+        margin: 30px auto;
+        padding: 10px 10px 50px 10px;
+    }
+    .accordion{
+        display: grid;
+    }
+    .card{
+        display: block;
+        margin: 0 auto;
     }
 }
