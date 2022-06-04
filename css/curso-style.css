@@ -61,15 +61,14 @@ body{
 
 @media screen and (max-width: 1130px){
     .container-texto, .container-cursos, .container-titulo{
-        margin: 50px 20px;
+        margin: 30px 10px;
         padding: 10px 10px 50px 10px;
         max-width: 900px;
     }
     .accordion{
         display: grid;
         flex-direction: column;
-        align-items:center;
-        padding: 20px;
+        min-width: 200px;
         
     }
     .card{
